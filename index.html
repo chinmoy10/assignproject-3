@@ -1,11 +1,89 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" data-theme="light">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Assignment-3</title>
+
+    <!-- Google Font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&display=swap" rel="stylesheet">
+
+    <!-- tailwind css & DaisyUI Links -->
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@4.12.10/dist/full.min.css" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <!-- Font awesome CDN link -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+        integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    fontFamily: {
+                        Manrope: 'Manrope',
+                    },
+                },
+            },
+        }
+    </script>
 </head>
-<body>
-    
+<body class="font-Manrope">
+    <header class="bg-gradient-to-t from-[#f7f7f7] to-[#f4f4f405]">
+        <nav class="navbar w-11/12 mx-auto py-5">
+            <div class="navbar-start">
+                <a href="#" class="flex items-center justify-center gap-2">
+                    <button class="btn-circle bg-[#ABEF5F] w-10 h-10"><i class="fa-solid fa-arrow-right -rotate-45 text-xl"></i></button>
+                    <h1 class="text-4xl text-[#212121] font-extrabold">Rinterio</h1>
+                </a>
+            </div>
+            <div class="navbar-center hidden xl:flex">
+                <ul class="menu menu-horizontal px-1 flex items-center text-lg gap-5 font-medium">
+                    <li class="font-extrabold text-[#494949] text-base"><a href="#">Home</a></li>
+                    <li class="font-normal text-base text-[#737373]"><a href="#">Portfolio</a></li>
+                    <li class="font-normal text-base text-[#737373]"><a href="#">Services</a></li>
+                    <li class="font-normal text-base text-[#737373]"><a href="#">Blogs</a></li>
+                    <li class="font-normal text-base text-[#737373]"><a href="#">Contact Us</a></li>
+                </ul>
+            </div>
+            <div class="navbar-end gap-2 items-center">
+                <div class="hidden md:flex gap-3 text-lg">
+                    <button class="btn btn-circle bg-white"> <i class="fa-solid fa-magnifying-glass text-lg text-[#737373] text-center"></i></button>
+                    <button class="btn btn-circle bg-white"> <i class="fa-solid fa-shopping-cart text-lg text-[#737373] text-center"></i></button>
+                    <a href="#" class="btn flex items-center justify-center gap-2 bg-[#ABEF5F] rounded-full">
+                        <h1 class="text-lg text-[#1C1C1C] font-extrabold">Book Consult</h1>
+                        <button class="btn-circle w-7 h-7 bg-[#1C1C1C] text-white"><i class="fa-solid fa-arrow-right -rotate-45 text-lg"></i></button>
+                    </a>
+                </div>
+                <div class="dropdown">
+                    <div tabindex="0" role="button" class="btn btn-circle lg:hidden bg-white text-xl">
+                        <i class="fa-solid fa-bars"></i>
+                    </div>
+                    <ul tabindex="0"
+                        class="menu menu-sm dropdown-content bg-base-100 rounded-box z-[1] mt-3 w-52 right-0 p-2 shadow text-lg font-medium gap-5">
+                        <li class="font-extrabold text-[#494949]"><a href="#">Home</a></li>
+                        <li class="font-medium text-[#737373]"><a href="#">Services</a></li>
+                        <li class="font-medium text-[#737373]"><a href="#">Portfolio</a></li>
+                        <li class="font-medium text-[#737373]"><a href="#">Blogs</a></li>
+                        <li class="font-medium text-[#737373]"><a href="#">Contact Us</a></li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+        <section class="w-11/12 mx-auto pt-3 lg:pt-5 pb-6 lg:pb-12">
+            <div class="flex flex-col justify-center items-center pt-4 space-y-4 lg:space-y-7">
+                <img src="./images/banner.png" alt="">
+                <h1 class="text-[#212121] text-2xl lg:text-6xl text-center font-extrabold">A barn house of this design has a <br class="hidden md:block"> striking appearance</h1>
+                <p class="text-[#494949] text-base text-center">The barn house captivates with its blend of rustic charm and modern sophistication, featuring weathered wood, sleek metal <br class="hidden md:block"> accents, and large windows that flood the space with natural light.</p>
+                <a href="#" class="btn flex items-center justify-center gap-2 bg-[#ABEF5F50] rounded-full border-2 border-[#ABEF5F]">
+                    <h1 class="text-lg text-[#1C1C1C] font-extrabold">View Details</h1>
+                    <button class="btn-circle w-7 h-7 bg-[#ABEF5F] text-white"><i class="fa-solid fa-arrow-right -rotate-45 text-lg"></i></button>
+                </a>
+            </div>
+        </section>
+    </header>
 </body>
 </html>
